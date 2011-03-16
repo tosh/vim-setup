@@ -1,4 +1,4 @@
-# Janus: Carlhuda's vim Distribution
+# Janus: Carlhuda's vim Distribution - with some personal changes (tosh)
 
 This is a basic distribution of vim plugins and tools intended to be run
 on top of the latest MacVIM snapshot.
