@@ -80,7 +80,11 @@ au FileType python  set tabstop=4 textwidth=79
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
+" load pathogen
+call pathogen#runtime_append_all_bundles()
+
 " load the plugin and indent settings for the detected filetype
+filetype off
 filetype plugin indent on
 
 " Opens an edit command with the path of the currently edited file filled in
