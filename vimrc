@@ -52,16 +52,16 @@ if has("autocmd")
     \| exe "normal g'\"" | endif
 endif
 
-function s:setupWrapping()
-  set wrap
-  set wm=2
-  set textwidth=72
-endfunction
+"function s:setupWrapping()
+"  set wrap
+"  set wm=2
+"  set textwidth=72
+"endfunction
 
-function s:setupMarkup()
-  call s:setupWrapping()
-  map <buffer> <Leader>p :Mm <CR>
-endfunction
+"function s:setupMarkup()
+"  call s:setupWrapping()
+"  map <buffer> <Leader>p :Mm <CR>
+"endfunction
 
 " make uses real tabs
 au FileType make                                     set noexpandtab
@@ -70,9 +70,9 @@ au FileType make                                     set noexpandtab
 au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set ft=ruby
 
 " md, markdown, and mk are markdown and define buffer-local preview
-au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
+"au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
 
-au BufRead,BufNewFile *.txt call s:setupWrapping()
+"au BufRead,BufNewFile *.txt call s:setupWrapping()
 
 " make python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
 au FileType python  set tabstop=4 textwidth=79
